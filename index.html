@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+
+<h1>Users</h1><br>
+{{ range . }}
+    <ul>
+        <li>
+            <div><b> Email: </b>{{ .Email }}</div>
+            <div><b> Last Name: </b>{{ .LastName }} </div>
+            <div><b> Country: </b> {{ .Country }}</div>
+            <div><b> City: </b> {{ .City}}</div>
+            <div><b> Gender: </b>{{ .Gender}}</div>
+        </li>
+    </ul>
+{{ end }}
+</body>
+</html>
